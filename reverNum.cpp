@@ -7,14 +7,14 @@ int revNum(int n){
     while(n>0){
         int digit=n%10;
         n=n/10;
-         rev=rev*10+digit;
+        rev=rev*10+digit;
     }
     return rev;
 }
 
 int main(){
     int n;
-    cout<<"enter digit :";
+    cout<<"enter digit: ";
     cin>>n;
 
      int revDigit=revNum(n);
