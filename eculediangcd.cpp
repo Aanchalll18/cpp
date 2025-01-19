@@ -19,3 +19,6 @@ int main(){
     gcd(a,b);
     return 0;
 }
+
+// tc=o(log phi(min(a,b)))
+// phi because the value of a,b are continously flucting!!
