@@ -1,8 +1,14 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 
-int gcd(int n,int m){
-
+void gcd(int n,int m){
+    for(int i=min(n,m);i>=1;i--){
+        if(n%i==0 && m%i==0){
+            cout<<i;
+            break;
+        }
+    }
 }
 int main(){
     int n,m;
@@ -11,7 +17,6 @@ int main(){
     cout<<"Enter the value of secound number: ";
     cin>>m;
 
-    int num=gcd(n,m);
-    cout<<num;
+    gcd(n,m);
     return 0;
 }
